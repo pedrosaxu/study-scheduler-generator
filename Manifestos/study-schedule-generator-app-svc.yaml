@@ -12,3 +12,4 @@ spec:
                 app: study-scheduler-generator-app
         ports:
                 - port: 5000
+                  nodePort: 30364
