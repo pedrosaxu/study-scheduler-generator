@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-        name: scheduler-generator-app-deploy
+        name: study-scheduler-generator-app-deploy
         labels:
-                name: scheduler-generator-app-deploy
-                app: scheduler-generator-app
+                name: study-scheduler-generator-app-deploy
+                app: study-scheduler-generator-app
 spec:
         replicas: 1
         selector: 
                 matchLabels:
-                        name: scheduler-generator-app-pod
-                        app: scheduler-generator-app
+                        name: study-scheduler-generator-app-pod
+                        app: study-scheduler-generator-app
         template:
                 metadata:
-                        name: scheduler-generator-app-pod
+                        name: study-scheduler-generator-app-pod
                         labels:
-                                name: scheduler-generator-app-pod
-                                app: scheduler-generator-app
+                                name: study-scheduler-generator-app-pod
+                                app: study-scheduler-generator-app
                 spec:
                         containers:
-                                - name: scheduler-generator-app
-                                  image: itsssxuria/udemy_scheduler_generator
+                                - name: study-scheduler-generator-app
+                                  image: pedrosaxu/study-scheduler-generator
                                   ports:
                                           - containerPort: 5000
 
